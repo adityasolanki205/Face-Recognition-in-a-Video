@@ -58,15 +58,40 @@ Below are the steps to setup the enviroment and run the codes:
     # The Dimension of the input has to be increased as the model expects input in the form (Sample size, 160, 160,3)
     samples = np.expand_dims(image_pixels, axis = 0)
     
-    # Use the Predict method to find the Embeddings in the face. Output would be 1D vector of 128 embeddings of 
-    # that face
+    # Use the Predict method to find the Embeddings in the face. Output would be 1D vector of 128 embeddings of that face
     embeddings = model.predict(samples)
 ```
-4. **Training the SVM model on these Embeddings**:  
+
+4. **Training the SVM model on these Embeddings**:  Now we will train SVM model over the embeddings to predict the face of a person.
+
+```bash
+    # We will use Linear SVM model to train over the embeddings
+    model = SVC(kernel = 'linear', probability=True).fit(X_train,y_train)
+```
+
+5. **Predict the Face**: After the training of SVM model we will predict the face over test dataset.
+
+```bash
+    # Same preprocessing of the test photos have to be done like we did for Train and validation dataset.
+    image = np.asarray(image.convert('RGB'))
+    
+    # Now extract the face
+    faces = MTCNN.detect_faces(image)
+    
+    # Extract embeddings
+    embeddings = model.predict(samples)
+    
+    # At last we will predict the face embeddings
+    SVM_model.predict(X_test)
+```
 
 
 ## Tests
-Describe and show how to run the tests with code examples.
+To test the code we need to do the following:
+    1. Copy the photo to be tested in Test subfolder of Data folder
+    2. Goto the 'Predict face in a group' folder.
+    3. Open the 'Predict from a group of faces.ipynb'
+    4. Goto filename variable and provide the path to your photo. Atlast run the complete code. It will save a photo by the name 'Highlighted.jpg'
 
 ## How to use?
 If people like your project they’ll want to learn how they can use it. To do so include step by step guide to use your project.

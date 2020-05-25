@@ -87,19 +87,30 @@ Below are the steps to setup the enviroment and run the codes:
 
 ## Tests
 To test the code we need to do the following:
+
     1. Copy the photo to be tested in Test subfolder of Data folder
+    
     2. Goto the 'Predict face in a group' folder.
+    
     3. Open the 'Predict from a group of faces.ipynb'
+    
     4. Goto filename variable and provide the path to your photo. Atlast run the complete code. It will save a photo by the name 'Highlighted.jpg'
 
 ## How to use?
 To run the complete code follow the process below:
+
     1. Create Data Folder. 
+    
     2. Create Sub folders as Training and Validation Dataset
+    
     3. Create all the celebrity folders with all the required photos in them. 
+    
     4. Run the Train and Test Data.ipynb file under Training Data Creation folder
+    
     5. Save the output as numpy arrays
+    
     6. Run the Face embedding using FaceNet.ipynb under the same folder name. This will create training data for SVM model
+    
     7. Run the Predict from a group of faces.ipynb to recognise a familiar face
 
 
@@ -108,4 +119,3 @@ To run the complete code follow the process below:
 2. Tim Esler's Git repo:[https://github.com/timesler/facenet-pytorch](https://github.com/timesler/facenet-pytorch)
 3. Akash Nimare's README.md: https://gist.github.com/akashnimare/7b065c12d9750578de8e705fb4771d2f#file-readme-md
 4. [Machine learning mastery](https://machinelearningmastery.com/how-to-develop-a-face-recognition-system-using-facenet-in-keras-and-an-svm-classifier/)
-5. 

@@ -72,7 +72,7 @@ Below are the steps to setup the enviroment and run the codes:
 5. **Predict the Face**: After the training of SVM model we will predict the face over test dataset.
 
 ```bash
-    # Same preprocessing of the test photos have to be done like we did for Train and validation dataset.
+    # Preprocessing of the test photos have to be done like we did for Train and Validation photos
     image = np.asarray(image.convert('RGB'))
     
     # Now extract the face
@@ -85,7 +85,6 @@ Below are the steps to setup the enviroment and run the codes:
     SVM_model.predict(X_test)
 ```
 
-
 ## Tests
 To test the code we need to do the following:
     1. Copy the photo to be tested in Test subfolder of Data folder
@@ -94,18 +93,19 @@ To test the code we need to do the following:
     4. Goto filename variable and provide the path to your photo. Atlast run the complete code. It will save a photo by the name 'Highlighted.jpg'
 
 ## How to use?
-If people like your project they’ll want to learn how they can use it. To do so include step by step guide to use your project.
+To run the complete code follow the process below:
+    1. Create Data Folder. 
+    2. Create Sub folders as Training and Validation Dataset
+    3. Create all the celebrity folders with all the required photos in them. 
+    4. Run the Train and Test Data.ipynb file under Training Data Creation folder
+    5. Save the output as numpy arrays
+    6. Run the Face embedding using FaceNet.ipynb under the same folder name. This will create training data for SVM model
+    7. Run the Predict from a group of faces.ipynb to recognise a familiar face
 
-## Contribute
-
-Let people know how they can contribute into your project. A [contributing guideline](https://github.com/zulip/zulip-electron/blob/master/CONTRIBUTING.md) will be a big plus.
 
 ## Credits
-Give proper credits. This could be a link to any repo which inspired you to build this project, any blogposts or links to people who contrbuted in this project. 
-
-#### Anything else that seems useful
-
-## License
-A short snippet describing the license (MIT, Apache etc)
-
-MIT © [Yourname]()
+1. David Sandberg's facenet repo: [https://github.com/davidsandberg/facenet](https://github.com/davidsandberg/facenet)
+2. Tim Esler's Git repo:[https://github.com/timesler/facenet-pytorch](https://github.com/timesler/facenet-pytorch)
+3. Akash Nimare's README.md: https://gist.github.com/akashnimare/7b065c12d9750578de8e705fb4771d2f#file-readme-md
+4. [Machine learning mastery](https://machinelearningmastery.com/how-to-develop-a-face-recognition-system-using-facenet-in-keras-and-an-svm-classifier/)
+5. 

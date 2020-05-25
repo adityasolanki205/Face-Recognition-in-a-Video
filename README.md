@@ -18,19 +18,30 @@ For the last one year, I have been part of a great learning curve wherein I have
 <b>Built with</b>
 - [Keras](https://keras.io/)
 - [TensorFlow](https://www.tensorflow.org/)
+- [scikit-learn](https://scikit-learn.org/stable/)
 
-## Features
-What makes your project stand out?
 
 ## Code Example
-Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
+
+```bash
+    # clone this repo, removing the '-' to allow python imports:
+    git clone https://github.com/adityasolanki205/Face-Recognition.git
+```
 
 ## Installation
-Provide step by step series of examples and explanations about how to get a development env running.
 
-## API Reference
+Below are the steps to setup the enviroment and run the codes:
 
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
+1. Data Setup: First the data setup has to be done. Download the [5 celebrity Dataset, Kaggle](https://www.kaggle.com/dansbecker/5-celebrity-faces-dataset). After the Download
+
+2. 
+
+```bash
+    # After cloning we will run one code at a time
+    git clone https://github.com/adityasolanki205/Face-Recognition.git
+```
+
+
 
 ## Tests
 Describe and show how to run the tests with code examples.

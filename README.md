@@ -4,9 +4,9 @@
 
 This is a Facial Recognition application developed for **learning and implementation purpose only**. In this repository a model has been trained to detect and recognise faces of six individuals namely Aditya Solanki(Author), Ben Afflek, Madonna, Elton John, Jerry Seinfled, Mindy Kaling. The complete process is divided into 3 parts:
 
-1. **Face Detection in a Photograph**.
-2. **Implementation of FaceNet model on the extracted face**.
-3. **Implementation of Linear Support Vector Machine to recognise the face**.
+1. [**Face Detection in a Photograph**](#face-detection)
+2. **Implementation of FaceNet model on the extracted face**
+3. **Implementation of Linear Support Vector Machine to recognise the face**
 
 
 ## Motivation
@@ -51,9 +51,20 @@ Below are the steps to setup the enviroment and run the codes:
     # Use MTCNN object to detect faces using detect_faces() method
     faces = MTCNN.detect_faces(image)
 ```
-This will provide the co-ordinates of pixels to identify face in the photo. Same process can be done to fetch more than one face from a photo with multiple people. 
+This will provide the co-ordinates of pixels to identify the face in the photo. Same process can be done to fetch more than one face from a photo with multiple people. 
 
-3. **Face Embeddings**: After face extraction we will fetch the face embedding using [FaceNet](https://github.com/davidsandberg/facenet). The model can be downloaded from [here](https://drive.google.com/drive/folders/1pwQ3H4aJ8a6yyJHZkTwtjcL4wYWQb7bn).
+3. **Face Embeddings**: After face extraction we will fetch the face embedding using [FaceNet](https://github.com/davidsandberg/facenet). Downloaded the model [here](https://drive.google.com/drive/folders/1pwQ3H4aJ8a6yyJHZkTwtjcL4wYWQb7bn).
+
+```bash
+    # The Dimension of the input has to be increased as the model expects input in the form 
+    # (Sample size, 160, 160,3)
+    samples = np.expand_dims(image_pixels, axis = 0)
+    
+    # Use the Predict method to find the Embeddings in the face. Output would be 1D vector of 128 embeddings of 
+    # that face
+    embeddings = model.predict(samples)
+```
+
 
 
 ## Tests

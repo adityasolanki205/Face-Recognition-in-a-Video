@@ -15,6 +15,8 @@ In this Repository we will try to create a Face Recognition classifier for the a
     - Face Recognition
     
     - Predict Face
+    
+    - Predict a Face in a Group
 
     - Data
     

@@ -97,7 +97,7 @@ To test the code we need to do the following:
     4. Goto filename variable and provide the path to your photo. Atlast run the complete code. It will save a photo by the name 'Highlighted.jpg'
 
 ## How to use?
-To run the complete code follow the process below:
+To run the complete code, follow the process below:
 
     1. Create Data Folder. 
     
@@ -112,7 +112,6 @@ To run the complete code follow the process below:
     6. Run the Face embedding using FaceNet.ipynb under the same folder name. This will create training data for SVM model
     
     7. Run the Predict from a group of faces.ipynb to recognise a familiar face
-
 
 ## Credits
 1. David Sandberg's facenet repo: [https://github.com/davidsandberg/facenet](https://github.com/davidsandberg/facenet)

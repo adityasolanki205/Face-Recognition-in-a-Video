@@ -3,15 +3,15 @@ This is a Facial Recognition application developed for **learning and implementa
 
 1. Face Detection in a Photograph
 2. Implementation of FaceNet model on the extracted face.
-3. Implementation of Linear Support vector machine to recognise the face.
+3. Implementation of Linear Support Vector Machine to recognise the face.
 
 
 ## Motivation
-A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists.
+For the last one year, I have been part of a great learning curve wherein I have upskilled myself to move into a Machine Learning and Cloud Computing. This project was practice project for all the learnings I have had. This is first of many more the come. 
 
 
 ## Code style
-If you're using any code style like xo, standard etc. That will help others while contributing to your project. Ex. -
+The coding style is standard
 
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
  

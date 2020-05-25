@@ -18,6 +18,8 @@ In this Repository we will try to create a Face Recognition classifier for the a
     
     - Predict a Face in a Group
 
+    - Highlighting a face
+
     - Data
     
     - [Facenet Model by Hiroki Taniai](https://github.com/nyoki-mtl/keras-facenet)

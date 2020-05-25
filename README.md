@@ -1,25 +1,23 @@
-## Facial Recognition
+## **Facial Recognition**
 
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 
 This is a Facial Recognition application developed for **learning and implementation purpose only**. In this repository a model has been trained to detect and recognise faces of six individuals namely Aditya Solanki(Author), Ben Afflek, Madonna, Elton John, Jerry Seinfled, Mindy Kaling. The complete process is divided into 3 parts:
 
-1. Face Detection in a Photograph
-2. Implementation of FaceNet model on the extracted face.
-3. Implementation of Linear Support Vector Machine to recognise the face.
+1. **Face Detection in a Photograph**.
+2. **Implementation of FaceNet model on the extracted face**.
+3. **Implementation of Linear Support Vector Machine to recognise the face**.
 
 
 ## Motivation
-For the last one year, I have been part of a great learning curve wherein I have upskilled myself to move into a Machine Learning and Cloud Computing. This project was practice project for all the learnings I have had. This is first of many more to come. 
+For the last one year, I have been part of a great learning curve wherein I have upskilled myself to move into a Machine Learning and Cloud Computing. This project was practice project for all the learnings I have had. This is first of the many more to come. 
  
-## Screenshots
-Include logo/demo screenshot etc.
 
 ## Tech/framework used
-Ex. -
 
 <b>Built with</b>
-- [Electron](https://electron.atom.io)
+- [Keras](https://keras.io/)
+- [TensorFlow](https://www.tensorflow.org/)
 
 ## Features
 What makes your project stand out?

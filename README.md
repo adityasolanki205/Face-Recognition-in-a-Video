@@ -32,8 +32,6 @@ Below are the steps to setup the enviroment and run the codes:
 
 1. **Data Setup**: First the data setup has to be done. Download the [5 celebrity Dataset, Kaggle](https://www.kaggle.com/dansbecker/5-celebrity-faces-dataset). After the Download create one more sub folder in train and test folders for your own photos. Provide as diverse photos as you can find. 
 
-![](data/test/singers.jpg)
-
 2. **Face Detection**: Now we need to detect a face in the dataset. To do that we will use [Multi-Task Cascaded Convolutional Neural Network](https://arxiv.org/abs/1604.02878) (MTCNN). This process will provide the co-ordinates of pixels to identify the face in the photo. Same process can be done to fetch more than one face from a photo with multiple people. 
 
 ```python
@@ -84,8 +82,19 @@ Below are the steps to setup the enviroment and run the codes:
     # At last we will predict the face embeddings
     SVM_model.predict(X_test)
 ```
-![](output.jpg)
 
+## Tests
+To test the code we need to do the following:
+
+    1. Copy the photo to be tested in Test subfolder of Data folder
+![](data/test/singers.jpg)
+    
+    2. Goto the 'Predict face in a group' folder.
+    
+    3. Open the 'Predict from a group of faces.ipynb'
+    
+    4. Goto filename variable and provide the path to your photo. Atlast run the complete code. It will save a photo by the name 'Highlighted.jpg'
+![](output.jpg)
 
 **Note**: The boundary boxes are color coded:
 
@@ -95,18 +104,7 @@ Below are the steps to setup the enviroment and run the codes:
     4. Jerry Seinfield : Red
     5. Madonna         : Aqua
     6. Mindy Kaling    : White
-
-## Tests
-To test the code we need to do the following:
-
-    1. Copy the photo to be tested in Test subfolder of Data folder
     
-    2. Goto the 'Predict face in a group' folder.
-    
-    3. Open the 'Predict from a group of faces.ipynb'
-    
-    4. Goto filename variable and provide the path to your photo. Atlast run the complete code. It will save a photo by the name 'Highlighted.jpg'
-
 ## How to use?
 To run the complete code, follow the process below:
 

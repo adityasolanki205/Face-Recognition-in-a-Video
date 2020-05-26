@@ -86,6 +86,22 @@ Below are the steps to setup the enviroment and run the codes:
 ```
 ![](output.jpg)
 
+Note: Here the Boxes are color coded. Colors used are as below:
+    
+1. Aditya Solanki : Yellow
+    
+2. Ben Afflek : Blue
+    
+3. Elton John : Green
+
+4. Jerry Seinfield : Red
+
+5. Madonna : Aqua
+
+6. Mindy Kaling: White
+
+7. Unknown : Black
+
 ## Tests
 To test the code we need to do the following:
 

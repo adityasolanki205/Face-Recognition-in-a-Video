@@ -84,14 +84,13 @@ Below are the steps to setup the enviroment and run the codes:
     # At last we will predict the face embeddings
     SVM_model.predict(X_test)
     
-    '''Note: The boundary boxes are color coded:
+    Note: The boundary boxes are color coded:
     1. Aditya Solanki  : Yellow
     2. Ben Afflek      : Blue   
     3. Elton John      : Green
     4. Jerry Seinfield : Red
     5. Madonna         : Aqua
-    6. Mindy Kaling    : White'''
-
+    6. Mindy Kaling    : White
 ```
 ![](output.jpg)
 

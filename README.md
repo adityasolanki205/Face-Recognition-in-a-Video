@@ -86,6 +86,7 @@ Below are the steps to setup the enviroment and run the codes:
     # At last we will predict the face embeddings
     SVM_model.predict(X_test)
 ```
+![](output.jpg)
 
 ## Tests
 To test the code we need to do the following:

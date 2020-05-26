@@ -36,7 +36,7 @@ Below are the steps to setup the enviroment and run the codes:
 
 2. **Face Detection**: Now we need to detect a face in the dataset. To do that we will use [Multi-Task Cascaded Convolutional Neural Network](https://arxiv.org/abs/1604.02878) (MTCNN). This process will provide the co-ordinates of pixels to identify the face in the photo. Same process can be done to fetch more than one face from a photo with multiple people. 
 
-```bash
+```python
     # All the codes are written in Jupyter Notebooks
 
     # Install MTCNN
@@ -54,7 +54,7 @@ Below are the steps to setup the enviroment and run the codes:
 
 3. **Face Embeddings**: After face extraction we will fetch the face embedding using [FaceNet](https://github.com/davidsandberg/facenet). Downloaded the model [here](https://drive.google.com/drive/folders/1pwQ3H4aJ8a6yyJHZkTwtjcL4wYWQb7bn). After running this code for all the faces in train and test folders, we can save the embeddings using [np.saves_compressed](https://numpy.org/doc/stable/reference/generated/numpy.savez_compressed.html)
 
-```bash
+```python
     # The Dimension of the input has to be increased as the model expects input in the form (Sample size, 160, 160,3)
     samples = np.expand_dims(image_pixels, axis = 0)
     
@@ -64,14 +64,14 @@ Below are the steps to setup the enviroment and run the codes:
 
 4. **Training the SVM model on these Embeddings**:  Now we will train SVM model over the embeddings to predict the face of a person.
 
-```bash
+```python
     # We will use Linear SVM model to train over the embeddings
     model = SVC(kernel = 'linear', probability=True).fit(X_train,y_train)
 ```
 
 5. **Predict the Face**: After the training of SVM model we will predict the face over test dataset.
 
-```bash
+```python
     # Preprocessing of the test photos have to be done like we did for Train and Validation photos
     image = np.asarray(image.convert('RGB'))
     
@@ -84,13 +84,13 @@ Below are the steps to setup the enviroment and run the codes:
     # At last we will predict the face embeddings
     SVM_model.predict(X_test)
     
-    Note: Here the Boxes are color coded per person as given below :
-    1. Aditya Solanki : Yellow
-    2. Ben Afflek : Blue   
-    3. Elton John : Green
+    '''Note: The boundary boxes are color coded:
+    1. Aditya Solanki  : Yellow
+    2. Ben Afflek      : Blue   
+    3. Elton John      : Green
     4. Jerry Seinfield : Red
-    5. Madonna : Aqua
-    6. Mindy Kaling: White
+    5. Madonna         : Aqua
+    6. Mindy Kaling    : White'''
 
 ```
 ![](output.jpg)

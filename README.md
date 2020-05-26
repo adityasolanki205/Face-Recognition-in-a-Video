@@ -1,4 +1,4 @@
-## Facial Recognition
+# Facial Recognition
 
 This is a Facial Recognition application developed for **learning and implementation purpose only**. In this repository a model has been trained to detect and recognise faces of six individuals namely Aditya Solanki(Author), Ben Afflek, Madonna, Elton John, Jerry Seinfled, Mindy Kaling. The complete process is divided into 3 parts:
 

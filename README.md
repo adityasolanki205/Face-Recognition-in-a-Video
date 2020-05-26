@@ -86,14 +86,16 @@ Below are the steps to setup the enviroment and run the codes:
 ## Tests
 To test the code we need to do the following:
 
-    1. Copy the photo to be tested in Test subfolder of Data folder
+    1. Copy the photo to be tested in 'Test' subfolder of 'Data' folder. 
+    Here I have used a photo of Elton John and Madonna
 ![](data/test/singers.jpg)
     
     2. Goto the 'Predict face in a group' folder.
     
     3. Open the 'Predict from a group of faces.ipynb'
     
-    4. Goto filename variable and provide the path to your photo. Atlast run the complete code. It will save a photo by the name 'Highlighted.jpg'
+    4. Goto filename variable and provide the path to your photo. Atlast run the complete code. 
+    The recognised faces would have been highlighted and a photo would be saved by the name 'Highlighted.jpg'
 ![](output.jpg)
 
 **Note**: The boundary boxes are color coded:

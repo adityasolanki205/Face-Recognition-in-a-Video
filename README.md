@@ -6,8 +6,6 @@ This is a Facial Recognition application developed for **learning and implementa
 2. **Implementation of FaceNet model on the extracted face**
 3. **Implementation of Linear Support Vector Machine to recognise the face**
 
-The final output looks like this:
-
 ![](expected.gif)
 
 ## Motivation

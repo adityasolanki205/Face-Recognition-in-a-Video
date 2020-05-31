@@ -6,6 +6,9 @@ This is a Facial Recognition application developed for **learning and implementa
 2. **Implementation of FaceNet model on the extracted face**
 3. **Implementation of Linear Support Vector Machine to recognise the face**
 
+The final output looks like this:
+
+![](final.jpg)
 
 ## Motivation
 For the last one year, I have been part of a great learning curve wherein I have upskilled myself to move into a Machine Learning and Cloud Computing. This project was practice project for all the learnings I have had. This is first of the many more to come. 

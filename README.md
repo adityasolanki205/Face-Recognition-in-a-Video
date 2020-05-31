@@ -8,7 +8,7 @@ This is a Facial Recognition application developed for **learning and implementa
 
 The final output looks like this:
 
-![](final.jpg)
+![](expected.gif)
 
 ## Motivation
 For the last one year, I have been part of a great learning curve wherein I have upskilled myself to move into a Machine Learning and Cloud Computing. This project was practice project for all the learnings I have had. This is first of the many more to come. 

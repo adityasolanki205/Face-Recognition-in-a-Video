@@ -96,7 +96,7 @@ To test the code we need to do the following:
     
     4. Goto filename variable and provide the path to your photo. Atlast run the complete code. 
     The recognised faces would have been highlighted and a photo would be saved by the name 'Highlighted.jpg'
-![](output.jpg)
+![](final.jpg)
 
 **Note**: The boundary boxes are color coded:
 

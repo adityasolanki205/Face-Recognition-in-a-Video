@@ -1,5 +1,5 @@
 ## Face Recognition in a Video
-This is a Facial Recognition in a Video application developed for **learning and implementation purpose only**. In this repository a we will try to detect and recognise faces of six individuals namely Aditya Solanki(Author), Ben Afflek, Madonna, Elton John, Jerry Seinfled, Mindy Kaling. The complete process is divided into 3 parts:
+This is a Facial Recognition in a Video application developed for **learning and implementation purpose only**. In this repository a we will try to detect and recognise faces of six individuals namely Aditya Solanki(Author), Ben Affleck, Madonna, Elton John, Jerry Seinfled, Mindy Kaling. The complete process is divided into 3 parts:
 
 1. **Opening Video frame by frame**
 2. **Detecting a Face in each frame**

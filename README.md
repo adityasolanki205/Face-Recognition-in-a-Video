@@ -5,7 +5,7 @@ This is a Facial Recognition in a Video application developed for **learning and
 2. **Detecting a Face in each frame**
 3. **Recognising a face**
 
-![](madonna.gif)
+![](ben.gif)
 
 ## Motivation
 For the last one year, I have been part of a great learning curve wherein I have upskilled myself to move into a Machine Learning and Cloud Computing. This project second in the line where I am trying to recognise faces in a video.

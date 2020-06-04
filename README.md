@@ -104,11 +104,11 @@ To test the code we need to do the following:
 
     1. Copy the Video to be tested in 'Test' subfolder of 'Data' folder. 
        Here I have used a Video of Batman and Superman
-![](Ben_original.jpg)
+![](Ben_original.gif)
     
     2. Goto the 'Face Detection frames of a Video' Folder and Open the 'Face Detection.ipynb'. It will help us 
        find the faces present in the video in Each Frame
-![](Ben_detect.jpg)
+![](Ben_detect.gif)
     
     3. After Detecting the face, go to the 'Face recognition in a Video' folder and open 'Face Recognition' ipynb
        file 'cap' variable and  provide the path to your Video and run the complete code. The recognised faces     
